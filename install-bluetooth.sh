@@ -36,6 +36,7 @@ Type=oneshot
 ExecStartPost=/usr/bin/bluetoothctl discoverable on
 ExecStartPost=/bin/hciconfig %I piscan
 ExecStartPost=/bin/hciconfig %I sspmode 1
+ExecStartPost=/usr/bin/bluetoothctl pairable off 
 EOF
 
 # Bluetooth agent
